@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-po-translate = "po_translate.cli:main"
+po-translate = "src.po_translate.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
