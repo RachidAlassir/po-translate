@@ -1,9 +1,9 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "po-translate"
+name = "pofiletranslate"
 version = "0.1.0"
 description = "A CLI tool for automating PO file translations"
 authors = [{ name = "Rachid Alassir", email = "rachidalassir@gmail.com" }]
@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-po-translate = "src.po_translate.cli:main"
+pofiletranslate = "po_translate.cli:main"
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["po_translate"]

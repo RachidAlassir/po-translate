@@ -59,8 +59,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Update a PO file by scanning a codebase for translations.",
         epilog="""Examples:
-  po-translate /full/path/to/ar.po 
-  po-translate /full/path/to/ar.po --codebase /path/to/codebase --exclude "OpenUpgrade,odoo"
+  pofiletranslate /full/path/to/ar.po 
+  pofiletranslate /full/path/to/ar.po --codebase /path/to/codebase --exclude "repository1,repository2"
         """
     )
     parser.add_argument(

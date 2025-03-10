@@ -1,0 +1,9 @@
+# data/ar.po
+msgid "Hello, World!"
+msgstr ""
+
+msgid "Good Morning"
+msgstr ""
+
+msgid "Goodbye"
+msgstr ""
