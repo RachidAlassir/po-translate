@@ -1,6 +1,6 @@
 ### PO files translator from local codebases
 
-A simple CLI tool that scans a codebase for translations and updates a given PO file. It automatically extracts the language from the PO file's name (for example, "ar.po" yields the language code "ar").
+A simple CLI tool that scans a codebase for translations and updates a given PO file with the most likely translations. It automatically extracts the language from the PO file's name (for example, "ar.po" yields the language code "ar").
 
 ## Installation
 
@@ -43,7 +43,7 @@ the directories `dir1` and `dir2` from the scan.
 
 ## What It Does
 
-The tool scans the specified codebase for PO files matching the derived language (e.g., "ar") 
+The tool scans the specified codebase for PO files matching the derived language (e.g., "fr") 
 and updates your provided PO file with the most likely translation.
-If for example state == 'état' is found with 30% confidence and state == 'statut' is found with 70% confidence, 
+If for example state == 'statut' is found with 70% confidence and state == 'état' is found with 30% confidence, 
 the tool will select 'statut'.

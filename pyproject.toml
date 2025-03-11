@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pofiletranslate"
-version = "0.1.0"
+version = "0.3.0"
 description = "A CLI tool for automating PO file translations"
 authors = [{ name = "Rachid Alassir", email = "rachidalassir@gmail.com" }]
 readme = "README.md"
