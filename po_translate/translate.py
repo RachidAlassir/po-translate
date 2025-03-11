@@ -60,17 +60,12 @@ if __name__ == "__main__":
         description="Update a PO file by scanning a codebase for translations.",
         epilog="""Examples:
   pofiletranslate /full/path/to/ar.po 
-  pofiletranslate /full/path/to/ar.po --codebase /path/to/codebase --exclude "repository1,repository2"
+  pofiletranslate /full/path/to/ar.po --depth 5 --exclude "repository1,repository2"
         """
     )
     parser.add_argument(
         "po_file",
         help="Full path to the PO file to process (e.g. /full/path/to/ar.po)"
-    )
-    parser.add_argument(
-        "--codebase",
-        default=os.getcwd(),
-        help="Directory of the codebase to scan for translations (default: current directory)"
     )
     parser.add_argument(
         "--exclude",
